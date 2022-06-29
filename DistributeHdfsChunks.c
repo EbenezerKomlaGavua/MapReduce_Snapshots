@@ -248,7 +248,7 @@ double get_bytes_to_shuffle_10()
 
 double get_reduce_cost(msg_host_t h)
 {
-	double flops_per_mb =0.094164;
+	double flops_per_mb =0.0001273;
 	double rand_num = random_int(20000,40000);
 	 flops_per_mb *= rand_num/20000;
 	return REDUCE_CALIBRATION_FACTOR * (input_size / reducers) * flops_per_mb * MSG_host_get_speed(h);
@@ -258,7 +258,7 @@ double get_reduce_cost(msg_host_t h)
 double get_reduce_cost_2(msg_host_t h)
 {
 
-   double flops_per_mb =0.09512;
+   double flops_per_mb =0.0001365;
    double rand_num = random_int(20000,40000);
    flops_per_mb *= rand_num/20000;
    return REDUCE_CALIBRATION_FACTOR * (input_size / reducers) * flops_per_mb * MSG_host_get_speed(h);
@@ -268,7 +268,7 @@ double get_reduce_cost_2(msg_host_t h)
 double get_reduce_cost_3(msg_host_t h)
 {
 
-	double flops_per_mb =0.094912;//0.0011
+	double flops_per_mb =0.0007162;
 	double rand_num = random_int(20000,40000);
 	flops_per_mb *= rand_num/20000;
 	return REDUCE_CALIBRATION_FACTOR * (input_size / reducers) * flops_per_mb * MSG_host_get_speed(h);
@@ -276,7 +276,7 @@ double get_reduce_cost_3(msg_host_t h)
 
 double get_reduce_cost_4(msg_host_t h)
 {
-	double flops_per_mb =0.08892;
+	double flops_per_mb =0.000248;
 	double rand_num = random_int(20000,40000);
 	flops_per_mb *= rand_num/20000;
 	return REDUCE_CALIBRATION_FACTOR * (input_size / reducers) * flops_per_mb * MSG_host_get_speed(h);
@@ -284,7 +284,7 @@ double get_reduce_cost_4(msg_host_t h)
 
 double get_reduce_cost_5(msg_host_t h)
 {
-	double flops_per_mb =0.090804;
+	double flops_per_mb =0.0007062;
 	double rand_num = random_int(20000,40000);
 	flops_per_mb *= rand_num/20000;
     return REDUCE_CALIBRATION_FACTOR * (input_size / reducers) * flops_per_mb * MSG_host_get_speed(h);
@@ -292,7 +292,7 @@ double get_reduce_cost_5(msg_host_t h)
 
 double get_reduce_cost_6(msg_host_t h)
 {
-	double flops_per_mb =0.09412;//0.00054;
+	double flops_per_mb =0.0007062;//0.00054;
 	double rand_num = random_int(20000,40000);
 	flops_per_mb *= rand_num/20000;
     return REDUCE_CALIBRATION_FACTOR * (input_size / reducers) * flops_per_mb * MSG_host_get_speed(h);
@@ -300,14 +300,14 @@ double get_reduce_cost_6(msg_host_t h)
 
 double get_reduce_cost_7(msg_host_t h)
 {
-	double flops_per_mb =0.093233;
+	double flops_per_mb =0.0002918;
 	double rand_num = random_int(20000,40000);
 	flops_per_mb *= rand_num/20000;
     return REDUCE_CALIBRATION_FACTOR * (input_size / reducers) * flops_per_mb * MSG_host_get_speed(h);
 }
 double get_reduce_cost_8(msg_host_t h)
 {
-	double flops_per_mb =0.09364;
+	double flops_per_mb =0.000109;
 	double rand_num = random_int(20000,40000);
 	flops_per_mb *= rand_num/20000;
     return REDUCE_CALIBRATION_FACTOR * (input_size / reducers) * flops_per_mb * MSG_host_get_speed(h);
@@ -316,7 +316,7 @@ double get_reduce_cost_8(msg_host_t h)
 
 double get_reduce_cost_9(msg_host_t h)
 {
-	double flops_per_mb =0.08943;
+	double flops_per_mb =0.00016;
 	double rand_num = random_int(20000,40000);
 	flops_per_mb *= rand_num/20000;
     return REDUCE_CALIBRATION_FACTOR * (input_size / reducers) * flops_per_mb * MSG_host_get_speed(h);
@@ -325,7 +325,7 @@ double get_reduce_cost_9(msg_host_t h)
 
 double get_reduce_cost_10(msg_host_t h)
 {
-	double flops_per_mb = 0.084296;
+	double flops_per_mb = 0.0001;
 	double rand_num = random_int(20000,40000);
 	flops_per_mb *= rand_num/20000;
     return REDUCE_CALIBRATION_FACTOR * (input_size / reducers) * flops_per_mb * MSG_host_get_speed(h);
